@@ -1,24 +1,15 @@
 import 'package:flutter_player_music/app/app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_player_music/app/app_widget.dart';
-import 'package:flutter_player_music/app/modules/home/home_module.dart';
 import 'package:flutter_player_music/app/repositories/band_repository.dart';
 
-class AppModule extends MainModule {
-  @override
+class Module {
+
   List<Bind> get binds => [
         Bind((i) => AppController()),
         Bind((i) => BandRepository())
       ];
 
-  @override
-  List<Router> get routers => [
-        Router(Modular.initialRoute, module: HomeModule()),
-      ];
 
-  @override
-  Widget get bootstrap => AppWidget();
 
-  static Inject get to => Inject<AppModule>.of();
+
 }

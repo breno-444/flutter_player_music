@@ -9,7 +9,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="io.flutter.app.FlutterApplication"
+     
         android:label="flutter_player_music"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
@@ -28,7 +28,10 @@
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
-            android:name="flutterEmbedding"
-            android:value="2" />
+    android:name="io.flutter.embedding.android.SplashScreenDrawable"
+    android:resource="@drawable/launch_background" />
     </application>
+    <meta-data
+    android:name="flutterEmbedding"
+    android:value="2" />
 </manifest>

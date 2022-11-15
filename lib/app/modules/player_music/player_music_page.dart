@@ -133,7 +133,7 @@ class _PlayerMusicPageState extends ModularState<PlayerMusicPage, PlayerMusicCon
       padding: EdgeInsets.all(20),
       child: Row(
         children: <Widget>[
-          FlatButton(
+           TextButton(
             child: Icon(
               Icons.skip_previous,
               size: 70,
@@ -141,7 +141,7 @@ class _PlayerMusicPageState extends ModularState<PlayerMusicPage, PlayerMusicCon
             onPressed: () => controller.previousMusic(),
           ),
           Expanded(
-            child: FlatButton(
+            child:  TextButton(
               child: Icon(
                 controller.musicPlaying ? Icons.pause_circle_outline : Icons.play_circle_outline,
                 size: 70,
@@ -149,7 +149,7 @@ class _PlayerMusicPageState extends ModularState<PlayerMusicPage, PlayerMusicCon
               onPressed: () => controller.playMusic(),
             ),
           ),
-          FlatButton(
+           TextButton(
             child: Icon(
               Icons.skip_next,
               size: 70,
